@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
   <div style="position:relative; top:20px">
     <div class="row">
       <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="" alt="Programmer">
+        <div class="card h-100" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "/img/lightbulb.jpg" %}" alt="Programmer">
           <div class="card-body">
             <h5 class="card-title">Programmer</h5>
             <p class="card-text">Professional portfolio of project I've worked on.</p>
@@ -13,8 +14,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="blog.jpg" alt="Blogger">
+        <div class="card h-100" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "/img/blog.jpg" %}" alt="Blogger" width="100%">
           <div class="card-body">
             <h5 class="card-title">Blogger</h5>
             <p class="card-text">Blog posts I've written. Some technical, some opinion.</p>
@@ -22,8 +23,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="" alt="Teacher">
+        <div class="card h-100" style="width: 18rem;">
+          <img class="card-img-top" src="{% static "/img/teacher.jpg" %}" alt="Teacher">
           <div class="card-body">
             <h5 class="card-title">Teacher</h5>
             <p class="card-text">Teaching resources. All original content</p>
