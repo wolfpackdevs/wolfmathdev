@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  color: #fca311;
+}
+
+p {
+  color: #14213d;
+}
+
+a:hover {
+  color: #fca311;
+}
+
+body {
+  background-color: #14213d;
+}
+
+.container {
+  background-color: #e5e5e5;
+}
+
+.fill {
+    min-height: 100%;
+}
