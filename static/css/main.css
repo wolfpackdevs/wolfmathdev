@@ -6,6 +6,10 @@ h1, h2, h3, h4, p {
   color: #292c2f;
 }
 
+.highlight {
+  color:  #5383d3;
+}
+
 a:hover {
   color: #ef8354;
 }
@@ -41,6 +45,7 @@ body {
 
 
 /* Here starts the copy paste*/
+/* https://webdevtrick.com/html-css-footer/ */
 
 footer{
   position: fixed;
