@@ -8,10 +8,11 @@ h1, h2, h3, h4, p {
 
 .highlight {
   color:  #5383d3;
+  font-style: italic;
 }
 
 a:hover {
-  color: #ef8354;
+  color: #ef8354 !important;
 }
 
 body {
@@ -40,9 +41,16 @@ body {
 }
 
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
-  background-color: #e7e8e8;
+  background-color: #292c2f !important;
 }
 
+.nav-item, .nav-link {
+  color: #ffffff !important;
+}
+
+.nav-item:hover, .nav-link:hover {
+  color: #5383d3 !important;
+}
 
 /* Here starts the copy paste*/
 /* https://webdevtrick.com/html-css-footer/ */
