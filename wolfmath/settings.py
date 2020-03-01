@@ -74,14 +74,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'wolfmath.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 # Install PostgreSQL: https://tutorial-extensions.djangogirls.org/en/optional_postgresql_installation/
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #         'NAME': 'djangogirls',
 #         'USER': 'name',
 #         'PASSWORD': '',
