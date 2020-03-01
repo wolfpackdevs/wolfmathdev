@@ -19,7 +19,7 @@ body {
   background-color: #e7e8e8;
 }
 
-.container {
+#page-container {
   background-color: #ffffff;
 }
 
@@ -27,14 +27,16 @@ body {
   min-height: 100%;
 }
 
-.footer {
-  position: fixed;
+/*.footer {
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #2d3142;
   color: white;
 }
+*/
+
 
 .card-title {
   color: #14213d;
@@ -56,7 +58,7 @@ body {
 /* https://webdevtrick.com/html-css-footer/ */
 
 footer{
-  position: fixed;
+  position: static;
   bottom: 0;
 }
 .footer-distributed{
@@ -67,8 +69,8 @@ footer{
   text-align: left;
   font: bold 16px sans-serif;
 
-  padding: 20px 20px;
-  margin-top: 20px;
+  padding: 10px 30px;
+  margin-top: 0px;
 }
 
 .footer-distributed .footer-left,
