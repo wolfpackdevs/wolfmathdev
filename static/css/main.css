@@ -19,12 +19,10 @@ body {
   background-color: #e7e8e8;
 }
 
-#page-container {
-  background-color: #ffffff;
-}
-
 .fill {
-  min-height: 100%;
+  min-height: 85%;
+  max-height: 90%;
+  background-color: #ffffff;
 }
 
 /*.footer {
@@ -58,7 +56,7 @@ body {
 /* https://webdevtrick.com/html-css-footer/ */
 
 footer{
-  position: static;
+  position: fixed;
   bottom: 0;
 }
 .footer-distributed{
