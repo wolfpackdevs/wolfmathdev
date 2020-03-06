@@ -77,17 +77,31 @@ WSGI_APPLICATION = 'wolfmath.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# Install PostgreSQL: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
+# MySQL
+# https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-with-your-django-application-on-ubuntu-14-04
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wolfmath',
         'USER': 'wolfmath',
-        'PASSWORD': 'sludge factory',
+        'PASSWORD': 'junkhead',
         'HOST': 'localhost',
         'PORT': '',
     }
 }
+
+
+# Install PostgreSQL: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'wolfmath',
+#         'USER': 'wolfmath',
+#         'PASSWORD': 'sludge factory',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 # sqlite3 Old database (with nothing in it)
 # DATABASES = {
