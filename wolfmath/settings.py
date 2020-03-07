@@ -90,19 +90,6 @@ DATABASES = {
     }
 }
 
-
-# Install PostgreSQL: https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'wolfmath',
-#         'USER': 'wolfmath',
-#         'PASSWORD': 'sludge factory',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
-
 # sqlite3 Old database (with nothing in it)
 # DATABASES = {
 #     'default': {
