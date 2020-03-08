@@ -2,9 +2,16 @@ html, body {
   height: 100%;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4 {
   color: #292c2f;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: #292c2f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .highlight {
@@ -37,17 +44,13 @@ body {
 
 .card:hover {
   background-color: #5383d3;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
-.card:hover h5 {
+.card:hover h5, .card:hover p {
   color: #ffffff;
   text-decoration: none;
-}
-
-.card-hover p {
-  color: #ffffff;
-  text-decoration: none;
+  transition: 0.1s;
 }
 
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
@@ -186,21 +189,13 @@ footer{
 }
 
 .footer-distributed .footer-icons{
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .footer-distributed .footer-icons a{
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  border-radius: 2px;
-
   font-size: 2em;
-  color: #ffffff;
+  color: #5383d3;
   text-align: center;
-  line-height: 35px;
-
   margin-right: 20px;
-  margin-bottom: 5px;
 }

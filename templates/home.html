@@ -4,17 +4,17 @@
 {% block content %}
   <div style="position:relative; top:20px">
     <h1>Aaron <span class="highlight">Wolf</span></h1>
- 
+    <h2>developer, teacher, blogger</h2>
     <p class="px-0">I'm a <em>developer</em>, a <em>teacher</em>, and a <em>blogger</em>. located in the Center District of Israel.</p>
     <p class="px-2 highlight">Transplanted from Cleveland, Ohio</p>
-    <div class="row">
+    <div class="row"  style="position:relative; top:40px">
       <div class="col-md-4">
         <a href="{% url 'teach' %}">
           <div class="card h-100" style="width: 18rem;">
             <img class="card-img-top" src="{% static '/img/teach.jpg' %}" alt="Teacher" height="66%">
             <div class="card-body">
               <h5 class="card-title">Teacher</h5>
-              <p class="card-text">Teaching resources. All original content</p>
+              <p class="card-text">Math teaching resources; LaTeX and iPython Notebooks.</p>
             </div>
           </div>
         </a>
