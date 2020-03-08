@@ -6,3 +6,5 @@ class Project(models.Model):
   description = models.TextField()
   technology = models.CharField(max_length=20)
   image = models.FilePathField(path='/img/')
+  project_url = models.URLField(default="#")
+  github_url = models.URLField(default="#")
