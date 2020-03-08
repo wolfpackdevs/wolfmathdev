@@ -4,23 +4,10 @@
 {% block content %}
   <div style="position:relative; top:20px">
     <h1>Aaron <span class="highlight">Wolf</span></h1>
-    <h2>developer, teacher, blogger</h2>
-    <p class="px-0">I'm more than just a <em>developer</em>, a <em>teacher</em>, and a <em>blogger</em>.</p>
-    <p class="px-3 highlight">But that's what this website is about.</p>
-    <p class="px-0">I'm located in the Center District of Israel.</p>
+ 
+    <p class="px-0">I'm a <em>developer</em>, a <em>teacher</em>, and a <em>blogger</em>. located in the Center District of Israel.</p>
     <p class="px-2 highlight">Transplanted from Cleveland, Ohio</p>
     <div class="row">
-      <div class="col-md-4">
-        <a href="{% url 'blog' %}">
-          <div class="card h-100" style="width: 18rem;">
-            <img class="card-img-top" src="{% static '/img/blogger.jpg' %}" alt="Blogger" height="66%">
-            <div class="card-body">
-              <h5 class="card-title">Blogger</h5>
-              <p class="card-text">Blog posts I've written. Some technical, some opinion.</p>
-            </div>
-          </div>
-        </a>
-      </div>
       <div class="col-md-4">
         <a href="{% url 'teach' %}">
           <div class="card h-100" style="width: 18rem;">
@@ -39,6 +26,17 @@
             <div class="card-body">
               <h5 class="card-title">Developer</h5>
               <p class="card-text">Professional portfolio of projects I've worked on.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="{% url 'blog' %}">
+          <div class="card h-100" style="width: 18rem;">
+            <img class="card-img-top" src="{% static '/img/blogger.jpg' %}" alt="Blogger" height="66%">
+            <div class="card-body">
+              <h5 class="card-title">Blogger</h5>
+              <p class="card-text">My blog posts. Some are technical, some are opinion.</p>
             </div>
           </div>
         </a>
