@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>{{post.title}}</h1>
+<div class="row">
+  <div class="col-md-8">
+    <img src="{% static post.image %}" alt="post.description" width="100%">
+  </div>
+  <div class="col-md-4">
+    <h3>About the post</h3>
+    <p>{{post.description}}</p>
+    <h3>built with:</h3>
+    <p>{{post.technology}}</p>
+  </div>
+</div>
+
+
+{% endblock %}
