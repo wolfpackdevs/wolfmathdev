@@ -1,9 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
-# Create your models here.
-
 # Inital models: https://www.djangorocks.com/tutorials/how-to-create-a-basic-blog-in-django/defining-your-models.html
 STATUS = (
     (0,"Draft"),
@@ -12,7 +9,7 @@ STATUS = (
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, default=title)
     updated_on = models.DateTimeField(auto_now= True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
