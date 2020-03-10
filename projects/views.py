@@ -7,4 +7,4 @@ def projects_list(request):
 
 def project_detail(request, pk):
   project = Project.objects.get(pk=pk)
-  return render(request, 'programmer/project_detail.html', {'project': project})
+  return render(request, 'projects/detail.html', {'project': project})
