@@ -5,21 +5,23 @@
   <h1>teacher</h1>
 
   <p>The vast majority of my lesson plans were written in LaTeX markup langugage. I am working on compiling them into
-  a single work called "The Big Open Source Math Book." There's a lot of work left, but you can 
+  a single work called <em>The Big Open Source Math Book.</em> There's a lot of work left, but you can 
   <a href="https://github.com/wolf-math/Big-Open-Source-Math-Book">view its progress on GitHub</a></p>
 
-  <p>I am also working on converting all of these lessons into interactive Jupyter (iPython) Notebooks which is what you see below</p>
+  <p>The rest of what you see below is all of those lessons from the <em>The Big Open Source Math Book</em> converted into interactive
+  Jupyter (iPython) notebooks.</p>
 
-  {% for notebook in notebooks %}
-    <a href="{{ notebook.notebook_url }}">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title"> {{ notebook.title }} </h5>
-          <p class="card-text"> {{ notebhook.description }} </p>
-          <p class="card-text"><small class="text-muted">updated {{ notebook.created_on }}</small></p>
+  <div style="position:relative; top:20px">
+    {% for notebook in notebooks %}
+      <a href="{{ notebook.notebook_url }}">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> {{ notebook.title }} </h5>
+            <p class="card-text"> {{ notebook.description }} </p>
+            <p class="card-text"><small class="text-muted">updated {{ notebook.created_on }}</small></p>
+          </div>
         </div>
-      </div>
-    </a>
-
-  {% endfor %}
+      </a>
+    {% endfor %}
+  </div>
 {% endblock %}

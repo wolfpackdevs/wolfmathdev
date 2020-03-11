@@ -8,3 +8,6 @@ class Project(models.Model):
   image = models.FilePathField(path='/img/')
   project_url = models.URLField(default="#")
   github_url = models.URLField(default="#")
+
+  def __str__(self):
+    return self.title
