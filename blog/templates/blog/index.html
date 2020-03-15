@@ -2,17 +2,17 @@
 {% load static %}
 {% block content %}
   <h1>blog</h1>
-
-  {% for post in posts %}
-    <a href="{% url 'post' pk=post.pk %}">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title"> {{ post.title }} </h5>
-          <p class="card-text"> {{ post.content }} </p>
-          <p class="card-text"><small class="text-muted">updated {{ post.created_on }}</small></p>
+  <div style="position:relative; top:20px">
+    {% for post in posts %}
+      <a href="{% url 'post' pk=post.pk %}">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> {{ post.title }} </h5>
+            <p class="card-text"> {{ post.content }} </p>
+            <p class="card-text"><small class="text-muted">updated {{ post.created_on }}</small></p>
+          </div>
         </div>
-      </div>
-    </a>
-  {% endfor %}
-
+      </a>
+    {% endfor %}
+  </div>
 {% endblock %}
