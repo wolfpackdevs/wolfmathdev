@@ -6,9 +6,7 @@
 
     {% if projects|length == 0 %}
       <div style="position:relative; top:50px">
-        <div class="card mb-3">
-          <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
-        </div>
+        <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
       </div>
     {% endif %}
 
@@ -23,6 +21,6 @@
         </div>
       </a>
     {% endfor %}
-    
+
   </div>
 {% endblock %}
