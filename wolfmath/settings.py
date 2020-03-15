@@ -79,25 +79,28 @@ WSGI_APPLICATION = 'wolfmath.wsgi.application'
 
 # MySQL
 # https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-with-your-django-application-on-ubuntu-14-04
-
-# PSQL
-# https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wolfmath',
         'USER': 'wolfmath',
-        'PASSWORD': 'sludge factory',
+        'PASSWORD': 'junkhead',
         'HOST': 'localhost',
         'PORT': '',
     }
 }
 
-# sqlite3 Old database (with nothing in it)
+
+# PSQL
+# https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'wolfmath',
+#         'USER': 'wolfmath',
+#         'PASSWORD': 'sludge factory',
+#         'HOST': 'localhost',
+#         'PORT': '',
 #     }
 # }
 

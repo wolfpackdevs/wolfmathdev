@@ -12,6 +12,13 @@
   Jupyter (iPython) notebooks.</p>
 
   <div style="position:relative; top:20px">
+
+    {% if projects|length == 0 %}
+      <div style="position:relative; top:50px">
+        <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
+      </div>
+    {% endif %}
+
     {% for notebook in notebooks %}
       <a href="{{ notebook.notebook_url }}">
         <div class="card mb-3">
