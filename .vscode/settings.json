@@ -1,4 +1,5 @@
 {
     "python.pythonPath": ".env/bin/python3.6",
-    "treeview.location": "explorer"
+    "treeview.location": "explorer",
+    "git.ignoreLimitWarning": true
 }
