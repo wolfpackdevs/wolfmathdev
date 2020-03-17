@@ -24,6 +24,12 @@ a:hover {
   text-decoration: none;
 }
 
+/* Navbar */
+
+nav {
+  background-color: #292c2f !important;
+}
+
 a.nav-item.nav-link:hover {
   color: #ef8354 !important;
   text-decoration: none;
