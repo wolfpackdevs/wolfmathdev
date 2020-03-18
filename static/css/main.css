@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background-color: #E7E8E8 !important;
 }
 
 h1, h2, h3, h4 {
@@ -58,7 +59,7 @@ body {
 
 .card:hover h5, .card:hover p {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: 0.1s;
 }
 
