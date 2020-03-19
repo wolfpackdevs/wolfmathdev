@@ -45,22 +45,31 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* Cards */
 
 .card-title {
   color: #14213d;
 }
 
-.card:hover {
-  background-color: #5383d3;
+.h-100:hover {
   transition: 0.2s;
-  /* box-shadow: #5383d3 2px 5px 10px; */
 }
 
-.card:hover h5, .card:hover p {
-  color: #ffffff;
-  text-decoration: none !important;
-  transition: 0.1s;
+.h-100:hover .card-img-top {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.h-100 h4, .h-100 p {
+  text-align: center;
+}
+
+.h-100:hover h4, .h-100:hover p {
+  color: #14213d !important;
 }
 
 /* Navbar */
