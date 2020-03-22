@@ -60,7 +60,7 @@ a {
 }
 
 .h-100:hover .card-img-top {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 
@@ -68,9 +68,9 @@ a {
   text-align: center;
 }
 
-.h-100:hover h4, .h-100:hover p {
-  color: #14213d !important;
-  transform: scale(1.2);
+.h-100:hover h4 {
+  color: #ef8354 !important;
+  transform: scale(1.1);
   transition: 0.2s;
 }
 

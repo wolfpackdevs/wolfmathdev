@@ -3,17 +3,28 @@
 
 {% block content %}
   <h1>Aaron <span class="highlight">Wolf</span></h1>
-  <h2>developer, teacher, blogger</h2>
-  <p class="px-0">I'm a <em>developer</em>, a <em>teacher</em>, and a <em>blogger</em>. located in the Center District of Israel.</p>
-  <p class="px-2 highlight">Transplanted from Cleveland, Ohio</p>
+  <h2 class="px-0">I'm a <span class="highlight">full stack developer</span>!</h2>
+  <p>I'm a web developer living in Israel. I used to be a <span class="highlight">Math</span> and <span class="highlight">Computer Programming</span> teacher in Cleveland, Ohio.
+  </p>
   <div class="row justify-content-center"  style="position:relative; top:40px">
+    <div class="col-md-4">
+      <a href="{% url 'teach' %}">
+        <div class="card h-100 border-0" style="width: 18rem;">
+          <img class="card-img-top" src="{% static '/img/wolf-logo_D6.png' %}" alt="Teacher" height="66%">
+          <div class="card-body">
+            <h4 class="card-title">Math</h4>
+            <p class="card-text">Jupyter Notebooks & LaTeX documents</p>
+          </div>
+        </div>
+      </a>
+    </div>
     <div class="col-md-4">
       <a href="{% url 'projects' %}">
         <div class="card h-100 border-0" style="width: 18rem;">
           <img class="card-img-top" src="{% static '/img/wolf-head_small.png' %}" alt="Programmer" height="66%">
           <div class="card-body">
             <h4 class="card-title">Web Developer</h4>
-            <p class="card-text">Hire Me.</p>
+            <p class="card-text">Freelance web developer for hire. Python + Django, Ruby on Rails, Wordpress.</p>
           </div>
         </div>
       </a>
@@ -24,16 +35,7 @@
           <img class="card-img-top" src="{% static '/img/wolf-logo_D5.png' %}" alt="Blogger" height="66%">
           <div class="card-body">
             <h4 class="card-title">Blog</h4>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="{% url 'teach' %}">
-        <div class="card h-100 border-0" style="width: 18rem;">
-          <img class="card-img-top" src="{% static '/img/wolf-logo_D6.png' %}" alt="Teacher" height="66%">
-          <div class="card-body">
-            <h4 class="card-title">Math</h4>
+            <p class="card-text"></p>
           </div>
         </div>
       </a>
