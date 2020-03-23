@@ -49,6 +49,18 @@ a {
   text-decoration: none !important;
 }
 
+.navbar, .navbar-expand-lg, .navbar-light, .bg-light {
+  background-color: #292c2f !important;
+}
+
+.nav-item, .nav-link {
+  color: #ffffff !important;
+}
+
+.nav-item:hover, .nav-link:hover {
+  color: #5383d3 !important;
+}
+
 /* Cards */
 
 .card-title {
@@ -74,19 +86,17 @@ a {
   transition: 0.2s;
 }
 
-/* Navbar */
 
-.navbar, .navbar-expand-lg, .navbar-light, .bg-light {
-  background-color: #292c2f !important;
+/* Languages */
+.languages {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.nav-item, .nav-link {
-  color: #ffffff !important;
+.skills {
+  margin-top: -8px;
 }
 
-.nav-item:hover, .nav-link:hover {
-  color: #5383d3 !important;
-}
 
 /* Footer */
 

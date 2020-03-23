@@ -1,8 +1,47 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <h1>projects</h1>
+  <h1>Coding <span class="highlight">Languages</span></h1>
+  <div class="languages">
+    <div class="language">
+      <h5><i class="fab fa-python"></i> Python</h5>
+        <ul class="skills">
+          <li>Django</li>
+          <li>MatPlotLib</li>
+          <li>NumPy</li>
+          <li>SimPy</li>
+          <li>Pandas</li>
+          <li>Jupyter</li>
+        </ul>
+    </div>
+    <div class="language">
+      <h5><i class="fa fa-diamond"></i> Ruby</h5>
+        <ul class="skills">
+          <li>Ruby on Rails</li>
+          <li>Webpacker</li>
+        </ul>
+    </div>
+    <div class="language">
+      <h5><i class="fab fa-html5"></i> HTML & CSS</h5>
+        <ul class="skills">
+          <li>HTML5 & CSS3</li>
+          <li>Bootstrap</li>
+          <li>SASS/SCSS</li>
+        </ul>
+    </div>
+    <div class="language">
+      <h5><i class="fab fa-linux"></i> Linux</h5>
+    </div>
+    <div class="language">
+      <h5><i class="fas fa-database"></i> SQL</h5>
+    </div>
+
+  </div>
+
   <div style="position:relative; top:20px">
+  
+
+  <h1>Portfolio<h1>
 
     {% if projects|length == 0 %}
       <div style="position:relative; top:50px">

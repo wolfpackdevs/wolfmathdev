@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'blog',
     'teach',
     'projects',
-    'django_extensions',
     'storages',
 ]
 
