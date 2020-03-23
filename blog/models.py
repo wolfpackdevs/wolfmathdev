@@ -10,11 +10,12 @@ STATUS = (
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    # slug = models.SlugField(max_length=200, unique=True)
-    updated_on = models.DateTimeField(auto_now= True)
     content = models.TextField()
+    # slug = models.SlugField(max_length=200, unique=True)
     created_on = models.DateTimeField(default=timezone.now)
+    updated_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    # image = models.ImageField(default="{% static '/img/wolf-logo_D5.png' %}", upload_to='blog_pics')
 
     class Meta:
         ordering = ['-created_on']
