@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 # Inital models: https://www.djangorocks.com/tutorials/how-to-create-a-basic-blog-in-django/defining-your-models.html
 STATUS = (
@@ -12,7 +13,7 @@ class Post(models.Model):
     # slug = models.SlugField(max_length=200, unique=True)
     updated_on = models.DateTimeField(auto_now= True)
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(default=timezone.now)
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
