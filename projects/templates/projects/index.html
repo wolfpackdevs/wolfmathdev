@@ -2,27 +2,33 @@
 {% load static %}
 {% block content %}
   
-  <div style="position:relative; top:20px">
-  
-
   <h1><i class="far fa-folder-open"></i> Portfolio<h1>
 
-    {% if projects|length == 0 %}
-      <div style="position:relative; top:50px">
-        <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
-      </div>
-    {% endif %}
+  {% if projects|length == 0 %}
+    <div style="position:relative; top:50px">
+      <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
+    </div>
+  {% endif %}
 
-    {% for project in projects %}
-      <a href="{% url 'project_detail' pk=project.pk %}">
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title"> {{ project.title }} </h5>
-            <p class="card-text"> {{ project.description }} </p>
-            {% comment %} <p class="card-text"><small class="text-muted">created: {{ project.created_on|date:"F d, Y" }}</small></p> {% endcomment %}
-          </div>
+  {% for project in projects %}
+    <a href="{% url 'project_detail' pk=project.pk %}">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title"> {{ project.title }} </h5>
+          <p class="card-text"> {{ project.description }} </p>
+          {% comment %} <p class="card-text"><small class="text-muted">created: {{ project.created_on|date:"F d, Y" }}</small></p> {% endcomment %}
         </div>
-      </a>
-    {% endfor %}
+      </div>
+    </a>
+  {% endfor %}
+
+  {% comment %} This will be the new card! {% endcomment %}
+  <div class="project container">
+    <img class="project-pic" src="{% static '/img/wolf-logo_D5.png' %}" alt="Blogger">
+    <div class="project-text">
+      <h4 class="project-title">Title</h4>
+      <p class="project-description">This is all about my stuff</p>
+    </div>
   </div>
+
 {% endblock %}

@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
 
 h1 {
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 p {
@@ -114,6 +114,21 @@ a {
   margin-top: -8px;
 }
 
+/* Projects */
+
+.project {
+  display: flex;
+  outline: thin;
+}
+
+.project p {
+  font-size: medium;
+}
+
+.project-pic {
+  height:300px;
+  width: auto;
+}
 
 /* Footer */
 
