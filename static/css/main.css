@@ -119,6 +119,7 @@ a {
 .project {
   display: flex;
   outline: thin;
+  padding: 5px;
 }
 
 .project p {
