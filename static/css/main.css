@@ -25,6 +25,18 @@ a:hover {
   text-decoration: none;
 }
 
+.skills {
+  list-style: none;
+}
+
+/* Banner */
+
+.wrapper {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* Navbar */
 
 nav {
@@ -72,7 +84,7 @@ a {
 }
 
 .h-100:hover .card-img-top {
-  transform: scale(1.1);
+  transform: scale(1.02);
   transition: 0.2s;
 }
 
