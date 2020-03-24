@@ -5,7 +5,7 @@
   <h1><i class="far fa-folder-open"></i> Portfolio</h1>
 
   {% if projects|length == 0 %}
-    <div style="position:relative; top:50px">
+    <div style="position:relative; top:20px">
       <h2><i class="far fa-frown-open"></i> Nothing posted yet</h2>
     </div>
   {% endif %}
@@ -26,7 +26,15 @@
   <div class="project container">
     <img class="project-pic" src="{% static '/img/wolf-logo_D5.png' %}" alt="Blogger">
     <div class="project-text">
-      <h4 class="project-title">Title</h4>
+      <h5 class="project-title">Title</h5>
+      <p class="project-description">This is all about my stuff</p>
+    </div>
+  </div>
+
+    <div class="project container">
+    <img class="project-pic" src="{% static '/img/wolf-logo_D5.png' %}" alt="Blogger">
+    <div class="project-text">
+      <h5 class="project-title">Title</h5>
       <p class="project-description">This is all about my stuff</p>
     </div>
   </div>
