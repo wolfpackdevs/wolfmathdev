@@ -9,12 +9,21 @@
   </div>
   <div class="col-md-4">
     <h3>About the project:</h3>
-    <p>{{project.description}}</p>
+    <p>{{ project.description }}</p>
     <h3>built with:</h3>
-    <p>{{project.technology}}</p>
+    <p>{{ project.technology }}</p>
   </div>
 </div>
 
-<a href="{% url 'projects' %}">Back</a>
+{% if project.project_url != "#" %}
+  <p>Project URL: <a href={{ project.project_url }}>{{ project.project_url }}</a>
+{% endif%}
+{% if project.github_url != "#" %}
+  <p>Git URL: <a href={{ project.github_url }}>{{ project.github_url }}</a>
+{% endif %}
+
+
+
+<p id="back"> <a href="{% url 'projects' %}"><img src="{% static '/img/wolf-logo_D5.png' %}"> Back</a></p>
 
 {% endblock %}
