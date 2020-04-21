@@ -80,12 +80,11 @@ WSGI_APPLICATION = 'wolfmath.wsgi.application'
 # https://www.digitalocean.com/community/tutorials/how-to-use-mysql-or-mariadb-with-your-django-application-on-ubuntu-14-04
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'wolfmath',
-        'USER': 'wolfmath',
-        'PASSWORD': 'junkhead',
+        'USER': 'postgres',
+        'PASSWORD': 'phoenix82390',
         'HOST': 'localhost',
-        'PORT': '',
     }
 }
 

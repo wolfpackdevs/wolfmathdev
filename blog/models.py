@@ -4,9 +4,10 @@ from django.utils import timezone
 
 # Inital models: https://www.djangorocks.com/tutorials/how-to-create-a-basic-blog-in-django/defining-your-models.html
 STATUS = (
-    (0,"Draft"),
-    (1,"Publish")
+    (0, "Draft"),
+    (1, "Publish")
 )
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -15,6 +16,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(default=timezone.now)
     updated_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
+
     # image = models.ImageField(default="{% static '/img/wolf-logo_D5.png' %}", upload_to='blog_pics')
 
     class Meta:
@@ -22,4 +24,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-        
